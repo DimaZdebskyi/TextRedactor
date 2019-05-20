@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container1">
+    <div id="head">
+
+        <div class="btn-toolbar firstBut" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group">
+                <button type="button" id="edit" class="btn btn-secondary"><img class="icon" src="icon/code.png" alt=""></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button type="button" id="boldText" class="btn btn-secondary"><img src="icon/bold.png" alt="" class="icon"></button>
+                <button type="button" id="italicText" class="btn btn-secondary"><img src="icon/italic.png" alt="" class="icon"></button>
+                <button type="button" id="underText" class="btn btn-secondary"><img src="icon/underlined-text.png" alt="" class="icon"></button>
+                <button type="button" id="strikeText" class="btn btn-secondary"><img src="icon/strikethrough-text.png" alt="" class="icon"></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button type="button" id="leftText" class="btn btn-secondary"><img src="icon/align-to-left.png" alt="" class="icon"></button>
+                <button type="button" id="centerText" class="btn btn-secondary"><img src="icon/center-text-alignment.png" alt="" class="icon"></button>
+                <button type="button" id="rightText" class="btn btn-secondary"><img src="icon/align-to-right.png" alt="" class="icon"></button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group fontStyles" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="icon/font.png" alt="" class="icon">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Arial">Arial</span></a>
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Georgia">Georgia</span></a>
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Impact">Impact</span></a>
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Tahoma">Tahoma</span></a>
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Times New Roman">Times New Roman</span></a>
+                        <a class="dropdown-item fontFam" href="#"><span style="font-family: Verdana">Verdana</span></a>
+                    </div>
+                </div>
+
+
+                <div class="btn-group fontStyles" role="group">
+                    <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="icon/text%20size.png" alt="" class="icon">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item fontSiz" href="#"><span>12px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>14px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>16px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>18px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>20px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>22px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>25px</span></a>
+                        <a class="dropdown-item fontSiz" href="#"><span>30px</span></a>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="icon/painter-palette.png" alt="" class="icon"></button>
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content colors">
+                            <div class="colorSet" style="background-color: aqua"></div>
+                            <div class="colorSet" style="background-color: aquamarine"></div>
+                            <div class="colorSet" style="background-color: lightgreen"></div>
+                            <div class="colorSet" style="background-color: green"></div>
+                            <div class="colorSet" style="background-color: cornflowerblue"></div>
+                            <div class="colorSet" style="background-color: dodgerblue"></div>
+                            <div class="colorSet" style="background-color: blueviolet"></div>
+                            <div class="colorSet" style="background-color: darkviolet"></div>
+                            <div class="colorSet" style="background-color: darkslateblue"></div>
+                            <div class="colorSet" style="background-color: indigo"></div>
+                            <div class="colorSet" style="background-color: yellow"></div>
+                            <div class="colorSet" style="background-color: orange"></div>
+                            <div class="colorSet" style="background-color: darkorange"></div>
+                            <div class="colorSet" style="background-color: chocolate"></div>
+                            <div class="colorSet" style="background-color: indianred"></div>
+                            <div class="colorSet" style="background-color: brown"></div>
+                            <div class="colorSet" style="background-color: whitesmoke"></div>
+                            <div class="colorSet" style="background-color: silver"></div>
+                            <div class="colorSet" style="background-color: darkgrey"></div>
+                            <div class="colorSet" style="background-color: dimgray"></div>
+                            <div class="colorSet" style="background-color: black"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="greyWrapper"></div>
+                <button type="button" class="btn btn-secondary BgColor">
+                    <img class="icon" src="icon/frame-landscape.png" alt=""></button>
+                    <div class="backgroundsBlock">
+                        <nav>
+                            <div class="nav nav-tabs" id="navtab" role="tablist"> <a class="nav-item nav-link active" id="navHomeTab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Color</a> <a class="nav-item nav-link" id="navProfileTab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Images</a> <a class="nav-item nav-link" id="navContactTab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">File</a> </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="colorBlock2">
+                                    <div class="colorSet2" style="background-color: aqua"></div>
+                                    <div class="colorSet2" style="background-color: aquamarine"></div>
+                                    <div class="colorSet2" style="background-color: lightgreen"></div>
+                                    <div class="colorSet2" style="background-color: green"></div>
+                                    <div class="colorSet2" style="background-color: cornflowerblue"></div>
+                                    <div class="colorSet2" style="background-color: dodgerblue"></div>
+                                    <div class="colorSet2" style="background-color: blueviolet"></div>
+                                    <div class="colorSet2" style="background-color: darkviolet"></div>
+                                    <div class="colorSet2" style="background-color: darkslateblue"></div>
+                                    <div class="colorSet2" style="background-color: indigo"></div>
+                                    <div class="colorSet2" style="background-color: yellow"></div>
+                                    <div class="colorSet2" style="background-color: orange"></div>
+                                    <div class="colorSet2" style="background-color: darkorange"></div>
+                                    <div class="colorSet2" style="background-color: chocolate"></div>
+                                    <div class="colorSet2" style="background-color: indianred"></div>
+                                    <div class="colorSet2" style="background-color: brown"></div>
+                                    <div class="colorSet2" style="background-color: whitesmoke"></div>
+                                    <div class="colorSet2" style="background-color: silver"></div>
+                                    <div class="colorSet2" style="background-color: darkgrey"></div>
+                                    <div class="colorSet2" style="background-color: dimgray"></div>
+                                    <div class="colorSet2" style="background-color: black"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="backgroundImageBlock">
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg1.png)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg2.jpg)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg3.png)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg4.jpg)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg5.jpg)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg6.jpg)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg7.png)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg8.jpg)"></div>
+                                    <div class="backgroundImageBlockItem" style="background-image: url(image/bg9.jpg)"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="input-group mb-3">
+                                    <div class="custom-file" id="fileBackground">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="photo" accept="image/*,image/jpeg" multiple>
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="btn-group" id="loginButton" role="group">
+                <button data-target="#exampleModal" data-toggle="modal" data-backdrop="static" data-keyboard="false" type="button" class="btn btn-secondary"><img class="icon" src="icon/padlock.png" alt="">
+                </button>
+            </div>
+            <div class="loginPanelGreyWrapper"></div>
+            <div class="loginPanel">
+                <form id='formLogin'>
+                    <h3>Sign up</h3>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Login here.."> </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password here.."> </div>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="signButton">Sign in</button>
+                </form>
+            </div>
+        </div>
+        <div class="editButtons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-light " id="saveChanges"><img src="icon/save-button.png" class="icon"></button>
+                <button type="button" class="btn btn-light " id="tableButton"><img src="icon/table-grid.png" class="icon"></button>
+                <button type="button" class="btn btn-light " id="olListBtn"><img src="icon/numbered-list.png" class="icon"></button>
+                <button type="button" class="btn btn-light " id="ulListBtn"><img src="icon/list-with-dots.png" class="icon"></button>
+            </div>
+        </div>
+    </div>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quasi rem. Enim iure quae voluptatum?</p>
+    </div>
+    <textarea id="editContainer"></textarea>
+</div>
+<div class="tableContainer">
+    <form id="tableform">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="countTr">Count TR:</label>
+                <input type="text" class="form-control" id="countTr" placeholder="Type here..."> </div>
+            <div class="form-group col-md-6">
+                <label for="countTd">Count TD:</label>
+                <input type="text" class="form-control" id="countTd" placeholder="Type here..."> </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="widthTd">Width TD:</label>
+                <input type="text" class="form-control" id="widthTd" placeholder="Type here..."> </div>
+            <div class="form-group col-md-6">
+                <label for="heightTd">Height TD:</label>
+                <input type="text" class="form-control" id="heightTd" placeholder="Type here..."> </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="widthBorder">Width of border:</label>
+                <input type="text" class="form-control" id="widthBorder" placeholder="Type here..."> </div>
+            <div class="form-group col-md-4">
+                <label for="styleBorder">Style of border</label>
+                <select id="styleBorder" class="form-control">
+                    <option value="solid" selected>solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="colorBorder">Color of border:</label>
+                <input type="text" class="form-control" id="colorBorder" placeholder="Type here..."> </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-lg-table" id="resetTableContainer">Reset</button>
+        <button type="button" class="btn btn-success btn-lg-table" id="createTableBtn">Create table</button>
+    </form>
+</div>
+<div id="tableSaveBlock"></div>
+<div id="listOlSaveBlock"></div>
+<div id="listUlSaveBlock"></div>
+</div>
+<div class="olListBlock">
+    <form id="olList">
+        <div class="form-group col-md-12">
+            <div class="form-group col-md-12">
+                <label for="countLi">Count li item:</label>
+                <input type="text" class="form-control" id="countLi" placeholder="Type here..."> </div>
+            <div class="form-group col-md-12">
+                <label for="markList">Type mark of list</label>
+                <select id="markList" class="form-control">
+                    <option value="decimal" selected>1</option>
+                    <option value="upper-alpha">A</option>
+                    <option value="lower-alpha">a</option>
+                    <option value="upper-roman">I</option>
+                    <option value="lower-roman">i</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-lg-list reset" id="resetListContainer">Reset</button>
+        <button type="button" class="btn btn-success btn-lg-list" id="createListBtn">Create list</button>
+    </form>
+</div>
+<div class="ulListBlock">
+    <form id="ulList">
+        <div class="form-group col-md-12">
+            <div class="form-group col-md-12">
+                <label for="countLiUl">Count li item:</label>
+                <input type="text" class="form-control" id="countLiUl" placeholder="Type here..."> </div>
+            <div class="form-group col-md-12">
+                <label for="markListUl">Type mark of list</label>
+                <select id="markListUl" class="form-control">
+                    <option value="circle" selected>circle</option>
+                    <option value="square">square</option>
+                    <option value="disk">disk</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" class="btn btn-danger btn-lg-list reset" id="resetListUlContainer">Reset</button>
+        <button type="button" class="btn btn-success btn-lg-list" id="createUlListBtn">Create list</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+
+}
+#head{
+    height: 70px;
+    background-color: #4A4A4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 20px;
+}
+.btn-secondary{
+    background-color: white;
+    color: #000;
+}
+.btn-secondary:hover {
+    background-color: #B8B8B8;
+    border-color: #C4C4C4;
+}
+.btn-group{
+    position: relative;
+   margin: 0 5px 0 5px;
+}
+#box{
+    padding: 10px;
+}
+.fontStyles{
+    margin-right: 0;
+}
+.colorSet,
+.colorSet2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    margin: 3px;
+    cursor: pointer;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+.modal-lg, .modal-xl {
+    max-width: 555px;
+}
+.greyWrapper {
+    background-color: rgba(1, 1, 1, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 100;
+}
+.backgroundsBlock {
+    display: none;
+    width: 550px;
+    height: 270px;
+    position: absolute;
+    top: 30px;
+    left: -50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 7px;
+    z-index: 150;
+}
+
+#nav-tab {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.backgroundImageBlockItem {
+    width: 150px;
+    height: 90px;
+    border-radius: 7px;
+    margin: 5px;
+    border: 1px solid black;
+    background-size: cover;
+}
+
+.backgroundImageBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#fileBackground {
+    margin: 10px
+}
+.colorBlock2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.loginPanelGreyWrapper {
+    background-color: rgba(1, 1, 1, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    z-index: 100;
+}
+.loginPanel {
+    display: block;
+    width: 550px;
+    height: 230px;
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    z-index: 150;
+}
+
+h3 {
+    text-align: center;
+}
+.editButtons {
+    display: none;
+}
+
+#editContainer {
+    width: 100%;
+    min-height: 88vh;
+    display: none;
+}
+
+.tableContainer {
+    width: 800px;
+    height: 320px;
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: none;
+    z-index: 150;
+}
+
+.tableInput {
+    width: 300px;
+    border-radius: 7px;
+    border-radius: 3px;
+}
+.title {
+    margin-top: 20px;
+}
+
+.btn-lg-table {
+    width: 387px;
+}
+
+#tableSaveBlock,
+#listUlSaveBlock,
+#listOlSaveBlock {
+    display: none
+}
+
+.olListBlock,
+.ulListBlock {
+    width: 530px;
+    height: 240px;
+    position: absolute;
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: none;
+    z-index: 150;
+}
+
+.btn-lg-list {
+    width: 223px;
+}
+
+.reset {
+    margin-left: 30px;
+}
